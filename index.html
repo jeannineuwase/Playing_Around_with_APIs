@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRtP+Vo5dSLa5BR3s9bYsFpvcJ2D+sqfp5pbUUK9M"
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <h1>Weather Dashboard</h1>
+      </div>
+      <div class="content">
+        <h1 style="text-align: center; color: #035678;">
+          WEATHER FORECAST APPLICATION
+        </h1>
+        <p style="text-align: center; color: #035678;">
+          Stay informed with accurate weather forecasts for your location.
+        </p>
+        <div class="search-box">
+          <input
+            class="city-input"
+            type="text"
+            placeholder="Enter a city name: E.g : Kicukiro, Nyarugenge, Nyarutarama"
+          />
+          <button class="search-btn">Search</button>
+          <p>Or</p>
+          <button class="location-btn">Click to use Current Location</button>
+        </div>
+        <div class="current-weather">
+          <h2>Current Weather</h2>
+          <div class="weather-details">
+            <div class="weather-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="weather-info">
+              <h3>City Name</h3>
+              <p>Temperature: __°C</p>
+              <p>Wind: __ M/S</p>
+              <p>Humidity: __%</p>
+            </div>
+          </div>
+        </div>
+        <div class="forecast">
+          <h1>Tract the wether for 5 days</h1>
+          <ul class="weather-cards">
+            <li class="card">
+              <h3>Day 1</h3>
+              <p>Temp: __°C</p>
+              <p>Wind: __ M/S</p>
+              <p>Humidity: __%</p>
+            </li>
+            <li class="card">
+              <h3>Day 2</h3>
+              <p>Temp: __°C</p>
+              <p>Wind: __ M/S</p>
+              <p>Humidity: __%</p>
+            </li>
+            <li class="card">
+              <h3>Day 3</h3>
+              <p>Temp: __°C</p>
+              <p>Wind: __ M/S</p>
+              <p>Humidity: __%</p>
+            </li>
+            <li class="card">
+              <h3>Day 4</h3>
+              <p>Temp: __°C</p>
+              <p>Wind: __ M/S</p>
+              <p>Humidity: __%</p>
+            </li>
+            <li class="card">
+              <h3>Day 5</h3>
+              <p>Temp: __°C</p>
+              <p>Wind: __ M/S</p>
+              <p>Humidity: __%</p>
+            </li>
+            <!-- Add more days here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

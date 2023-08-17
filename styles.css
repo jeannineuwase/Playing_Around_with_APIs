@@ -1,0 +1,141 @@
+
+.dashboard {
+    display: flex;
+    background-color: #E3F2FD;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    background-color: #08739c;
+    color: #fff;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  
+  .search-box {
+    margin-top: 20px;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .current-weather, .forecast {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .weather-icon img {
+    max-width: 60px;
+  }
+  
+  .weather-info {
+    margin-left: 20px;
+  }
+  
+  .weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .weather-cards .card {
+    color: #fff;
+    padding: 8px;
+    list-style: none;
+    width: calc(19% - 15px); /* Each card takes 20% width with 15px gap */
+    background: #6C757D;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .search-box {
+    text-align: center;
+    margin: 20px auto; /* Adjust margin as needed */
+  }
+  
+  .city-input,
+  .search-btn,
+  .location-btn {
+    padding: 12px 30px; 
+    border: none;
+    border-radius: 8px; 
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: block; 
+    margin: 10px auto; 
+    text-align: center;
+    width: 50%; 
+  }
+  .city-input{
+    max-width: 44%;
+  }
+  
+  .city-input {
+    border: 1px solid #ccc;
+  }
+  
+  .city-input:focus,
+  .search-btn:hover,
+  .location-btn:hover {
+    border-color: #035678; /* Change border color on focus/hover */
+  }
+  
+  .search-btn,
+  .location-btn {
+    background-color: #035678;
+    color: #fff;
+    cursor: pointer;
+  }
+  .location-btn{
+    background-color: #6C757D;
+  
+  }
+  .search-btn:hover,
+  .location-btn:hover {
+    background-color: #08739c;
+  }
+  @media (max-width: 768px) {
+    .dashboard {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .content {
+      width: 100%;
+      overflow-y: auto;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
